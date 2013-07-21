@@ -1,0 +1,90 @@
+.navbar-top {
+	position: absolute;
+	right: 20px;
+	top: 0px;
+	cursor: pointer;
+	z-index: 15;
+	height: 65px;
+	padding-top: 20px;
+	padding-left: 35px;
+}
+
+.flow-navbar {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+.fixed-navbar {
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	left: -1px;
+	bottom: auto;
+}
+
+.navbar-inner {
+	min-height: 50px;
+}
+
+.navbar-inner li {
+	line-height: 30px;
+}
+
+/* Override twitter bootstrap */
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.navbar-inner {
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	border: none;
+	text-align: center;
+	background: white;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border-bottom: 5px solid rgba(107, 98, 208, 0.4);
+}
+
+.navbar .nav {
+	width: 100%;
+	text-align: center;
+}
+.navbar .nav > li {
+	float: none;
+	display: inline-block;	
+}
+
+/* Not focused not active navbar item */
+.navbar .nav > li > a {
+	text-shadow: none;
+	color: #666;
+	padding: 15px 20px;
+	transition: all 500ms;
+	-moz-transition: all 500ms;
+	-webkit-transition: all 500ms;
+	-o-transition: all 500ms;
+	border-bottom: 5px solid transparent;
+	margin-bottom: -5px;
+}
+
+.navbar .nav > li > a:hover {
+	color: white;
+	background: #6B62D0;
+	border-bottom: 5px solid #6B62D0;
+}
+
+/* Active navbar item */
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+	background: white;
+	cursor: default;
+	border-bottom: 5px solid #6B62D0;
+	color: #6B62D0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
