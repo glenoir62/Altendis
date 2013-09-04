@@ -13,11 +13,11 @@ body {
   font-weight: 300;
   font-size: 1.2em;
   line-height: 1.4;
-  background-color: #ebeaf9;
+  background:url("../img/bg.jpg") repeat scroll center center white;
 }
 
 .clearfooter {
-  height: 260px;
+  height: 30px;
   clear: both;
 }
 
