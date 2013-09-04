@@ -1,83 +1,365 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <link rel="stylesheet" href="styles/5040a84d.main.css">
+		
+		<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+		
+		 <!-- Fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet" type="text/css">
+</head>
+
+  <body ng-app="AltendisApp" data-spy="scroll" data-target=".navbar" data-offset="100">
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
 
-    <title>Altendis by glenoir62</title>
-  </head>
+    <!--[if lt IE 9]>
+      <script src="bower_components/es5-shim/es5-shim.js"></script>
+      <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+	
+      <!-- Header
+      ================================================== -->
 
-  <body>
-    <header>
-      <div class="inner">
-        <h1>Altendis</h1>
-        <h2>Projets</h2>
-        <a href="https://github.com/glenoir62/Altendis" class="button"><small>View project on</small>GitHub</a>
-      </div>
+      <header>
+        <div class="header-bg"></div>
+        <div class="header-bg-shadow-start transition-color"></div>
+
+        <!-- Top strip -->
+        <div class="header-top-strip" style="display: none">
+          <div class="header-top-strip-content">
+
+            <!-- Excilys -->
+            <div class="header-top-strip-content-left">
+                <img src="./img/excilys.png" alt="" class="excilys-logo">
+            </div>
+
+            <div class="header-top-strip-content-left member-of-excilys">
+                Membre du groupe <font class="hand">excilys</font>
+            </div>
+
+            <!-- Social -->
+            <div class="header-top-strip-content-right">
+               <iframe src="http://ghbtns.com/github-btn.html?user=excilys&type=follow" allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe>
+                <a href="https://twitter.com/excilys" class="twitter-follow-button" data-lang="en">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Light effect below top strip -->
+        <div class="header-light-effect" style="display: none">
+          <div class="header-hr"></div>
+        </div>
+
+        <!-- Header main content -->
+        <div class="header-content">
+
+          <div class="reflect"><div>&nbsp;</div></div>
+          <div class="centered">
+            <div class="text">
+              <div class="altendis" style="display: none">Altendis</div>
+               <img src="./img/logo.png" alt="" class="altendis-logo" style="display: none">
+			   <br>
+              <div class="altendis-description" style="display: none">Spécialiste des nouvelles technologies</div>
+            </div>
+          </div>
+
+          <!-- Navbar in document -->
+          <div class="header-bottom-strip"></div>
+          <div class="flow-navbar">
+            <div class="navbar-top"><i class="icon-double-angle-up"></i> Haut</div>
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="nav-collapse collapse">
+                  <ul class="nav">
+                    <li class=""><a href="#anchor-accueil">Accueil</a></li><li class=""><a href="#anchor-Liferay">Liferay</a></li><li class=""><a href="#anchor-mobilité">Mobilité</a></li><li class=""><a href="#anchor-jee">JEE</a></li><li class=""><a href="#anchor-excilys">Excilys</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+	    <a class="forkme smooth-scroll" href="#anchor-join">
+			Partenaire officiel Liferay
+		</a>
     </header>
+	
+			<span id="anchor-accueil"></span>
+			<div class="contentPage">
+				<div class="container first">		
+					<ul class="thumbnails welcomeIcon">
+						<li class="span4">
+							 <div class="thumbnail text-center">
+								<i class="icon-flag icon-4x"></i>
+								<h3>Partenaire officiel</h3>
+							</div>
+						</li>
+						<li class="span4">
+							 <div class="thumbnail text-center">
+								<i class="icon-group icon-4x important"></i>
+								<h3>Formations Liferay</h3>
+							</div>
+						</li>
+						<li class="span4">
+							 <div class="thumbnail text-center">
+								<i class="icon-coffee icon-4x"></i>
+								<h3>Java/JEE</h3>
+							</div>
+						</li>
+					</ul>
+					
+					
+					
+					<div class="row">
+						<div class="span12">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit. Pst canata tari est paroy malardi dalr sahit ya kho ral labass erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna. Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.
+							</p>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+			
+			<div class="row">
+					<span id="anchor-Liferay"></span>
+			</div>
+			
+			<div class="contentPage">
+				<div class="container">
+					<div class="row">
+						<ul class="thumbnails welcomeIcon">
+							<li class="span3">
+								 <div class="thumbnail text-center">
+									<i class="icon-building icon-4x"></i>
+									<h3>Portail web</h3>
+								</div>
+							</li>
+							<li class="span3">
+								 <div class="thumbnail text-center">
+									<i class="icon-magic icon-4x important"></i>
+									<h3>Fonctionnalités</h3>
+								</div>
+							</li>
+							<li class="span3">
+								 <div class="thumbnail text-center">
+									<i class="icon-wrench icon-4x"></i>
+									<h3>Prestation</h3>
+								</div>
+							</li>
+							<li class="span3">
+								 <div class="thumbnail text-center">
+									<i class="icon-calendar icon-4x important"></i>
+									<h3>Les formations</h3>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="row">
+						<div class="span12">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit. Pst canata tari est paroy malardi dalr sahit ya kho ral labass erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna. Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<span id="anchor-mobilité"></span>
+			</div>
+			<div class="contentPage">
+				<div class="container">
+					<div class="row">
+						<ul class="thumbnails welcomeIcon">
+							<li class="span4">
+								 <div class="thumbnail text-center">
+									<i class="icon-mobile-phone icon-4x"></i>
+									<h3>Téléphone</h3>
+								</div>
+							</li>
+							<li class="span4">
+								 <div class="thumbnail text-center">
+									<i class="icon-android icon-4x important"></i>
+									<h3>Android</h3>
+								</div>
+							</li>
+							<li class="span4">
+								 <div class="thumbnail text-center">
+									<i class="icon-tablet icon-4x"></i>
+									<h3>Tablette</h3>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="row">
+						<div class="span12">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit. Pst canata tari est paroy malardi dalr sahit ya kho ral labass erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna. Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+			<div class="row">
+				<span id="anchor-jee"></span>
+			</div>
+			<div class="contentPage">
+				<div class="container">
+					<div class="row">
+						<ul class="thumbnails welcomeIcon">
+							<li class="span4">
+								 <div class="thumbnail text-center">
+									<i class="icon-sitemap icon-4x"></i>
+									<h3>Architecture</h3>
+								</div>
+							</li>
+							<li class="span4">
+								 <div class="thumbnail text-center">
+									<i class="icon-coffee icon-4x important"></i>
+									<h3>JEE</h3>
+								</div>
+							</li>
+							<li class="span4">
+								 <div class="thumbnail text-center">
+									<i class="icon-wrench icon-4x"></i>
+									<h3>Compétence</h3>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="row">
+						<div class="span12">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit. Pst canata tari est paroy malardi dalr sahit ya kho ral labass erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna. Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<span id="anchor-excilys"></span>
+			</div>
+			<div class="contentPage">
+				<div class="container">
+					<div class="row">
+						<ul class="thumbnails welcomeIcon">
+							<li class="span4">
+								 <div class="thumbnail text-center">
+									<i class="icon-trophy icon-4x"></i>
+									<h3>Excellence</h3>
+								</div>
+							</li>
+							<li class="span4">
+								 <div class="thumbnail text-center">
+									<i class="icon-retweet icon-4x important"></i>
+									<h3>Service équitable</h3>
+								</div>
+							</li>
+							<li class="span4">
+								 <div class="thumbnail text-center">
+									<i class="icon-sun icon-4x"></i>
+									<h3>Compétences</h3>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="row">
+						<div class="span12">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit. Pst canata tari est paroy malardi dalr sahit ya kho ral labass erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna. Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		 <div class="clearfooter">
+			<!-- Forces the footer to display below the content -->
+		 </div>
+	
+	 
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+	 
+	<div class="footer">
+      <div class="footer-bg"></div>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+      <!-- Light effect on top -->
+      <div class="footer-light-effect">&nbsp;</div>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+      <div class="footer-column">
+        <div class="footer-title">Adresse</div>
+        <div class="footer-text">
+          Altendis<br>
+          45-47 avenue Carnot<br>
+          94230 Cachan<br><br>
+        </div>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+        <div class="phone-label">Mail</div>
+        <span class="phone-text"><i class="icon-comment-alt"></i>&nbsp;&nbsp;&nbsp;contact@altendis.fr</span><br>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+        <div class="phone-label">Tél</div>
+        <span class="phone-text"><i class="icon-phone"></i>&nbsp;&nbsp;&nbsp;+33 (0) 1 41 24 43 20</span><br>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+        <div class="phone-label">Fax</div>
+        <span class="phone-text"><i class="icon-print"></i>&nbsp;&nbsp;&nbsp;+33 (0) 1 41 24 43 21</span><br>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+        <br>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </section>
-
-        <aside id="sidebar">
-          <a href="https://github.com/glenoir62/Altendis/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/glenoir62/Altendis/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/glenoir62/Altendis"></a> is maintained by <a href="https://github.com/glenoir62">glenoir62</a>.</p>
-
-          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
+        <div class="footer-text">
+          <a href="http://www.excilys.com/">Groupe Excilys</a> -
+          <a href="http://blog.excilys.com/">Blog</a> -
+          <a href="http://labs.excilys.com/">Labs</a>
+        </div>
       </div>
+
+      <!-- Contact form -->
+      <div class="footer-column footer-column-right">
+        <div class="quote">
+          <i class="icon-quote-left"></i>L'excellence au service<br>de vos ambitions<i class="icon-quote-right"></i>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <a href="#aboutModal" role="button" data-toggle="modal">Mentions Légales</a> - ©2012 Altendis 2000-2013<br>
+        Altendis SARL au capital de 50 000 € RCS de Créteil 480 397 069 00039 
+      </div>
+
+
+      <!-- Adresse postale et mail de contact, lien direct vers les stages, lien vers blog, lien vers labs, lien vers excilys.com, mentions légales, copyright -->
     </div>
 
-  
-  </body>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src='//www.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+
+    <script src="bower_components/angular/angular.js"></script>
+
+    <script src="scripts/6e14e048.scripts.js"></script>
+
+        <script src="scripts/67bf6f99.plugins.js"></script>
+
+        <script src="scripts/6b865daa.modules.js"></script>
+</body>
 </html>
